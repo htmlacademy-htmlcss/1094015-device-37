@@ -10,7 +10,7 @@
   <body>
     <!-- Шапка -->
     <header class="page-header">
-      <div class="page-container container">
+      <div class="page-header-container container">
         <a class="logo-header" href="index.html" aria-current="page">
           <img src="images/logo.svg" width="145" height="36" alt="Логотип компании Device.">
           <span class="visually-hidden">Логотип интернет-магазина «Device»</span>
@@ -19,7 +19,7 @@
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <label class="label-form-search visually-hidden">Напишите ваш запрос на поиск по сайту</label>
             <input class="search-header" placeholder="Поиск по сайту" type="search">
-            <button class="button button-find" type="submit">Найти</button>
+            <button class="button search-button" type="submit">Найти</button>
           </form>
           <ul class="menu-user list-reset">
             <li class="menu-user-item ">
@@ -36,33 +36,33 @@
           </ul>
         </div>
         <nav class="navigation">
-          <ul class="header-nav list-reset">
+          <ul class="header-nav navigation-list list-reset">
             <li class="navigation-item navigation-item-catalog">
               <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог товаров</a>
               <div class="navigation-catalog-container">
                 <ul class="grop-down-navigation grop-down-navigation-mobile list-reset">
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Виртуальная реальность</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Виртуальная реальность</a>
                   </li>
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="catalog.html">Моноподы для cелфи</a>
                   </li>
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Экшн-камеры</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
                 <ul class="grop-down-navigation grop-down-navigation-smart list-reset">
 
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Фитнес-браслеты</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Фитнес-браслеты</a>
                   </li>
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Умные часы</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Умные часы</a>
                   </li>
                 </ul>
                 <ul class="grop-down-navigation grop-down-navigation-video list-reset">
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Квадрокоптеры</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </div>
@@ -91,8 +91,7 @@
             <li class="slider-item slider-item-active">
               <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
               <div class="slider-images">
-                <img class="product-image" src="images/quadrocopter.svg" width="560" height="560"
-                  alt="Квадракоптер с лазерном замаскированным под стандартную камеру.">
+                <img class="product-image" src="images/quadrocopter.svg" width="560" height="560" alt="Квадракоптер с лазерном замаскированным под стандартную камеру.">
               </div>
               <div class="slider-info">
                 <h4 class="slider-title title">Порхает как бабочка, жалит как пчела!</h4>
@@ -114,8 +113,7 @@
             <li class="slider-item">
               <h3 class="visually-hidden">Фитнес часы</h3>
               <div class="slider-images">
-                <img class="product-image" src="images/fitness-watch.svg" width="560" height="560"
-                  alt="Фитнес часы для похудения.">
+                <img class="product-image" src="images/fitness-watch.svg" width="560" height="560" alt="Фитнес часы для похудения.">
               </div>
               <div class="slider-info">
                 <h4 class="slider-title title">Худеем правильно!</h4>
@@ -165,8 +163,7 @@
           </div>
           <ol class="slider-pagination-list list-reset">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-active" type="button"
-                aria-label="Слайд 1"></button>
+              <button class="slider-pagination-button slider-pagination-button-active" type="button" aria-label="Слайд 1"></button>
             </li>
             <li class="slider-pagination-item">
               <button class="slider-pagination-button" type="button" aria-label="Слайд 2"></button>
@@ -208,8 +205,7 @@
           <h2 class="visually-hidden">Сервис</h2>
           <ul class="services-tabs list-reset">
             <li class="services-tab-item service-tab-item-active">
-              <button class="services-tab-link services-tab-link-active button-service button-light"
-                type="button ">Доставка</button>
+              <button class="services-tab-link services-tab-link-active button-service button-light" type="button ">Доставка</button>
             </li>
             <li class="services-tab-item service-tab-item">
               <button class="services-tab-link button-service button-light" type="button ">Гарантия</button>
@@ -280,9 +276,8 @@
             распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Напишите ваш E-mail</label>
-            <input class="mailing-input" type="email" name="E-mail" id="subscribe-email" placeholder="Ваш e-mail"
-              required="">
-            <button class="mailing-submit button button-dark" type="submit">Подписаться</button>
+            <input class="mailing-input" type="email" name="E-mail" id="subscribe-email" placeholder="Ваш e-mail" required="">
+            <button class="mailing-submit button" type="submit">Подписаться</button>
           </form>
           <p class="mailing-note">Это бесплатно</p>
         </div>
@@ -301,36 +296,36 @@
               реки Карповки, 5, литера П.</p>
           </section>
           <section class="store-menu">
-            <ul class="footer-nav list-reset">
-              <li class="nav-item">
-                <a class="nav-link" href="#delivery">Доставка</a>
+            <ul class="footer-navigation list-reset">
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="#delivery">Доставка</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Гарантия</a>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="#">Гарантия</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Контакты</a>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <ul class="social list-reset">
-              <li class="social-item">
-                <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+            <ul class="footer-social list-reset">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-link-telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-link-twitter" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>
             </ul>
           </section>
-          <section class="information-footer">
+          <section class="footer-information">
             <a class="contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             <a class="academy-link" href="https://htmlacademy.ru/">
               <span class="visually-hidden">HTMLAcademy</span>
@@ -339,7 +334,54 @@
         </div>
       </div>
     </footer>
-    </div>
+
+    <!-- Модальное окно
+    Класс modal--close закрывает модальное окно -->
+    <section class="modal modal-close">
+      <div class="modal-container">
+        <h2 class="modal-title title">Доставка под заказ</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="modal-form">
+          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form-group form-group-name">
+              <label class="form-label" for="user-name">Ваше имя:</label>
+              <input class="form-input form-input-name" id="user-name" name="username" type="text" placeholder="Введите имя" required>
+              <span class="visually-hidden form-message">Добавьте имя</span>
+            </div>
+            <div class="form-group form-group-email form-group-invalid">
+              <label class="form-label" for="user-email">Ваш e-mail:</label>
+              <input class="form-input form-input-email" id="user-email" name="usermail" type="email" value="почта" placeholder="Введите адрес электронной почты" required>
+              <span class="form-message form-message-error">Забавный у вас адрес</span>
+            </div>
+            <div class="form-group form-group-textarea">
+              <label class="form-label" for="user-comment">Что нужно привезти:</label>
+              <textarea class="form-input form-input-textarea" id="user-comment" name="comment" placeholder="В свободной форме" rows="1"></textarea>
+            </div>
+            <div class="form-group form-group-number">
+              <div class="form-tooltip">
+                <label class="form-label" for="user-quantity">Количество:</label>
+                <button class="form-tooltip-btn" type="button">
+                  <span class="visually-hidden">Дополнительная информация</span>
+                </button>
+                <p class="form-tooltip-text" role="tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</p>
+              </div>
+              <div class="form-controls">
+                <button class="form-control form-control-step-down" type="button">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input class="form-input form-input-counter" id="user-quantity" name="user-quantity" type="number" value="1" min="1" max="999" step="1" required>
+                <button class="form-control form-control-step-up" type="button">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </div>
+            </div>
+            <button class="form-submit button button-light" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 
 </html>

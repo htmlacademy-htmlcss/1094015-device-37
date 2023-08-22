@@ -10,7 +10,7 @@
   <body>
     <!-- Шапка -->
     <header class="page-header">
-      <div class="page-container container">
+      <div class="page-header-container container">
         <a class="logo-header" href="index.html" aria-current="page">
           <img src="images/logo.svg" width="145" height="36" alt="Логотип компании Device.">
           <span class="visually-hidden">Логотип интернет-магазина «Device»</span>
@@ -26,7 +26,7 @@
               <a class="menu-user-link menu-user-link-login" href="#">Коля Петухов</a>
             </li>
             <li class="menu-user-item">
-              <a class="menu-user-link menu-user-link-logaut" href="#">Выйти</a>
+              <a class="menu-user-link menu-user-link-logout" href="#">Выйти</a>
             </li>
             <li class="menu-user-item">
               <a class="menu-user-link menu-user-link-compare" href="#">Сравнить</a>
@@ -39,34 +39,34 @@
           </ul>
         </div>
         <nav class="navigation">
-          <ul class="header-nav list-reset">
+          <ul class="header-nav navigation-list list-reset">
             <li class="navigation-item navigation-item-catalog">
               <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог товаров</a>
               <div class="navigation-catalog-container">
                 <ul class="grop-down-navigation grop-down-navigation-mobile list-reset">
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Виртуальная реальность</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Виртуальная реальность</a>
                   </li>
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link drop-down-catalog-link-current" href="catalog.html">Моноподы для
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link grop-down-catalog-link-current" href="catalog.html">Моноподы для
                       cелфи</a>
                   </li>
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Экшн-камеры</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
                 <ul class="grop-down-navigation grop-down-navigation-smart list-reset">
 
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Фитнес-браслеты</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Фитнес-браслеты</a>
                   </li>
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Умные часы</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Умные часы</a>
                   </li>
                 </ul>
                 <ul class="grop-down-navigation grop-down-navigation-video list-reset">
-                  <li class="drop-down-catalog">
-                    <a class="drop-down-catalog-link" href="#">Квадрокоптеры</a>
+                  <li class="grop-down-catalog">
+                    <a class="grop-down-catalog-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </div>
@@ -111,20 +111,18 @@
             <h3 class="catalog-title catalog-title-filter">Фильтр:</h3>
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-group filter-group-price">
-                <legend class="filter-title">Стоимость</legend>
+                <h4 class="filter-title">Стоимость</h4>
                 <div class="range-container">
                   <div class="range-base">
                     <div class="range-content range-content-min">
-                      <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value"
-                        aria-label="Минимальное значение">
+                      <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
                       <button class="range-button range-button-min" type="button">
                         <span class="visually-hidden">Минимальное значение</span>
                       </button>
                       <label class="range-value" for="min-value">от&nbsp;0</label>
                     </div>
                     <div class="range-content range-content-max">
-                      <input class="range-input visually-hidden" id="max-value" type="number" value="5000"
-                        name="max-value" aria-label="Максимальное значение">
+                      <input class="range-input visually-hidden" id="max-value" type="number" value="5000" name="max-value" aria-label="Максимальное значение">
                       <button class="range-button range-button-max" type="button">
                         <span class="visually-hidden">Максимальное значение</span>
                       </button>
@@ -134,7 +132,7 @@
                 </div>
               </fieldset>
               <fieldset class="filter-group filter-group-check">
-                <legend class="filter-title">Цвет</legend>
+                <h4 class="filter-title">Цвет</h4>
                 <ul class="filter-list list-reset">
                   <li class="filter-item">
                     <label class="filter-label" for="black">
@@ -169,19 +167,17 @@
                 </ul>
               </fieldset>
               <fieldset class="filter-group filter-group-radio">
-                <legend class="filter-title">Bluetooth</legend>
+                <h4 class="filter-title">Bluetooth</h4>
                 <ul class="filter-list list-reset">
                   <li class="filter-item">
                     <label class="filter-label" for="bluetooth-yes">
-                      <input class="filter-input filter-input-radio" id="bluetooth-yes" name="bluetooth" type="radio"
-                        value="yes" checked>
+                      <input class="filter-input filter-input-radio" id="bluetooth-yes" name="bluetooth" type="radio" value="yes" checked>
                       Есть
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="filter-label" for="bluetooth-no">
-                      <input class="filter-input filter-input-radio" id="bluetooth-no" name="bluetooth" type="radio"
-                        value="no">
+                      <input class="filter-input filter-input-radio" id="bluetooth-no" name="bluetooth" type="radio" value="no">
                       Нет
                     </label>
                   </li>
@@ -300,30 +296,30 @@
               реки Карповки, 5, литера П.</p>
           </section>
           <section class="store-menu">
-            <ul class="footer-nav list-reset">
-              <li class="nav-item">
-                <a class="nav-link" href="#delivery">Доставка</a>
+            <ul class="footer-navigation list-reset">
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="#delivery">Доставка</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Гарантия</a>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="#">Гарантия</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Контакты</a>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <ul class="social list-reset">
-              <li class="social-item">
-                <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+            <ul class="footer-social list-reset">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-link-telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-link-twitter" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>
@@ -338,6 +334,7 @@
         </div>
       </div>
     </footer>
+
   </body>
 
 </html>
