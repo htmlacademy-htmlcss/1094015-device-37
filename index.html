@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -160,7 +161,7 @@
             <li class="slider-item">
               <h3 class="visually-hidden">Селфи-палка</h3>
               <div class="slider-images">
-                <img src="images/slider-3.png" width="560" height="560" alt="Селфи-палка">
+                <img src="images/slider-3.png" width="560" height="560" alt="Селфи-палка.">
               </div>
               <div class="slider-info">
                 <h4 class="slider-title title">Делай селфи, как Бен Стиллер! </h4>
@@ -369,7 +370,7 @@
             </div>
             <div class="form-group form-group-email form-group-invalid">
               <label class="form-label" for="user-email">Ваш e-mail:</label>
-              <input class="form-input form-input-email" id="user-email" name="usermail" type="email" value="почта" placeholder="Введите адрес электронной почты" required>
+              <input class="form-input form-input-email form-input-error" id="user-email" name="usermail" type="email" value="почта" placeholder="Введите адрес электронной почты" required>
               <span class="form-message">Забавный у вас адрес</span>
             </div>
             <div class="form-group form-group-textarea">
@@ -378,17 +379,17 @@
             </div>
             <div class="form-group form-group-number">
               <div class="form-tooltip">
-                <label class="form-label" for="user-quantity">Количество:</label>
+                <label class="form-label form-label-tooltip" for="user-quantity">Количество:</label>
                 <button class="form-tooltip-btn" type="button">
                   <span class="visually-hidden">Дополнительная информация</span>
                 </button>
                 <p class="form-tooltip-text" role="tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</p>
               </div>
               <div class="form-controls">
-                <input class="form-input form-input-counter" id="user-quantity" name="user-quantity" type="number" value="1" min="1" max="999" step="1" required>
                 <button class="form-control form-control-step-down" type="button">
                   <span class="visually-hidden">Меньше</span>
                 </button>
+                <input class="form-input form-input-counter" id="user-quantity" name="user-quantity" type="number" value="1" min="1" max="999" step="1" required>
                 <button class="form-control form-control-step-up" type="button">
                   <span class="visually-hidden">Больше</span>
                 </button>
